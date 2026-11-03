@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سياسة الخصوصية | أرشيف المستندات Pro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --bg-body: #f8fafc;
+            --bg-card: #ffffff;
+            --border: #e2e8f0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Cairo', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.8;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 48px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 24px;
+            margin-bottom: 32px;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .header-title h1 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            font-weight: 700;
+        }
+
+        .header-title p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-top: 4px;
+        }
+
+        .lang-switch {
+            background-color: #f1f5f9;
+            color: var(--primary);
+            border: 1px solid var(--border);
+            padding: 8px 18px;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .lang-switch:hover {
+            background-color: var(--primary);
+            color: #ffffff;
+        }
+
+        .content-section {
+            display: block;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            margin: 28px 0 12px;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        p {
+            margin-bottom: 14px;
+            color: #334155;
+            font-size: 1rem;
+        }
+
+        ul {
+            margin: 12px 24px 20px;
+            color: #334155;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: #eff6ff;
+            color: var(--primary);
+            padding: 4px 12px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        .footer {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 24px;
+            }
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <div class="header-title">
+            <h1 id="app-title">أرشيف المستندات Pro</h1>
+            <p id="app-subtitle">وثيقة سياسة الخصوصية وحماية البيانات</p>
+        </div>
+        <button class="lang-switch" onclick="toggleLanguage()">Switch to English</button>
+    </div>
+
+    <!-- المحتوى العربي -->
+    <div id="content-ar" class="content-section">
+        <span class="badge">تاريخ السريان: نوفمبر 2026</span>
+        <p>مرحباً بك في تطبيق <strong>أرشيف المستندات — الإدارة المتقدمة (Document Archive Pro v6.0)</strong>، المطوّر بواسطة <strong>المهندس سمير الكمالي</strong>. نلتزم بأعلى معايير الخصوصية والأمان لحماية بياناتك وأرشيفك المؤسسي.</p>
+
+        <h2>1. معالجة وتخزين البيانات</h2>
+        <p>يعمل البرنامج بالكامل كتطبيق مكتبي محلي مستقل (Standalone Desktop Application):</p>
+        <ul>
+            <li><strong>تخزين محلي 100%:</strong> تُحفظ جميع المستندات، ملفات PDF، الصور، وقواعد البيانات محلياً على جهاز المستخدم أو على الخادم الشبكي الداخلي (UNC / Local Network) الذي يحدده المستخدم.</li>
+            <li><strong>انعدام التتبع السحابي:</strong> لا يقوم البرنامج برفع، نقل، أو تتبع نصوص المستندات، أرقام السندات، أو البيانات المالية لأي خوادم خارجية أو سحابية.</li>
+        </ul>
+
+        <h2>2. محرك قراءة النصوص (OCR)</h2>
+        <p>تتم جميع عمليات التعرف الضوئي على الحروف (OCR) باللغتين العربية والإنجليزية ومعالجة وتحسين الصور محلياً بالكامل عبر معالج الجهاز (Offline On-Device Processing) دون إرسال الصور لأي طرف خارجي.</p>
+
+        <h2>3. الصلاحيات والأذونات المطلوبة</h2>
+        <ul>
+            <li><strong>وحدات التخزين (File System):</strong> لقراءة المستندات، حفظ الملفات، إنشاء النسخ الاحتياطية المضغوطة، وتشفير المجلدات.</li>
+            <li><strong>الماسح الضوئي وكاميرا الويب:</strong> تُستخدم أجهزة الإدخال فقط عند طلب مسح أو تصوير مستند جديد بتدخل يدوي من المستخدم.</li>
+            <li><strong>الشبكة المحلية (Local Network):</strong> لدعم مزامنة المستندات على المجلدات المشتركة، أقفال القراءة/الكتابة، وحماية التعديلات المتزامنة.</li>
+        </ul>
+
+        <h2>4. الأمان وتشفير الملفات</h2>
+        <p>يتوافق البرنامج مع تقنيات التشفير المعتمدة في نظام التشغيل (مثل Windows EFS) للمجلدات المحلية لضمان منع الوصول غير المصرح به للملفات المخزنة.</p>
+
+        <h2>5. التواصل والدعم</h2>
+        <p>إذا كانت لديك أي استفسارات تقنية حول الأمان أو الخصوصية، يرجى التواصل عبر البريد الإلكتروني: <br>
+        <strong>sma812020@gmail.com</strong></p>
+    </div>
+
+    <!-- English Content -->
+    <div id="content-en" class="content-section hidden">
+        <span class="badge">Effective Date: November 2026</span>
+        <p>Welcome to <strong>Document Archive Pro (v6.0)</strong>, developed by <strong>Eng. Samir Al-Kamali</strong>. We are committed to maintaining the highest security and privacy standards for your document repository.</p>
+
+        <h2>1. Data Storage & Privacy</h2>
+        <p>Document Archive Pro operates entirely as an offline, standalone desktop application:</p>
+        <ul>
+            <li><strong>100% Local Storage:</strong> All scanned documents, metadata, PDFs, and databases are stored strictly on your local computer or chosen local network share (UNC/Tailscale).</li>
+            <li><strong>Zero External Telemetry:</strong> No scanned document contents, financial voucher data, or private user credentials are ever transmitted to external cloud servers.</li>
+        </ul>
+
+        <h2>2. On-Device OCR Processing</h2>
+        <p>All Optical Character Recognition (Arabic & English OCR) and image optimization algorithms run locally using the host computer's resources without communicating with third-party web services.</p>
+
+        <h2>3. Permissions Used</h2>
+        <ul>
+            <li><strong>Storage & File System:</strong> Required to organize files, create automated backups, and support directory encryption.</li>
+            <li><strong>Webcam / Scanner Hardware:</strong> Activated only upon manual user initiation to capture physical documents.</li>
+            <li><strong>Local Network Connectivity:</strong> Used exclusively to manage shared UNC folders, concurrent access locks, and team collaboration.</li>
+        </ul>
+
+        <h2>4. Security & Encryption</h2>
+        <p>The application supports native Windows Encrypting File System (EFS) integration for directory-level security against unauthorized local access.</p>
+
+        <h2>5. Developer Contact</h2>
+        <p>For inquiries regarding privacy or compliance, contact: <br>
+        <strong>sma812020@gmail.com</strong></p>
+    </div>
+
+    <div class="footer">
+        <p>© 2026 شركة الكمالي للبرمجيات المتقدمة • جميع الحقوق محفوظة</p>
+    </div>
+</div>
+
+<script>
+    function toggleLanguage() {
+        const arSection = document.getElementById('content-ar');
+        const enSection = document.getElementById('content-en');
+        const btn = document.querySelector('.lang-switch');
+        const title = document.getElementById('app-title');
+        const subtitle = document.getElementById('app-subtitle');
+        const html = document.documentElement;
+
+        if (arSection.classList.contains('hidden')) {
+            // التحويل إلى العربية
+            arSection.classList.remove('hidden');
+            enSection.classList.add('hidden');
+            html.dir = 'rtl';
+            html.lang = 'ar';
+            btn.textContent = 'Switch to English';
+            title.textContent = 'أرشيف المستندات Pro';
+            subtitle.textContent = 'وثيقة سياسة الخصوصية وحماية البيانات';
+        } else {
+            // التحويل إلى الإنجليزية
+            arSection.classList.add('hidden');
+            enSection.classList.remove('hidden');
+            html.dir = 'ltr';
+            html.lang = 'en';
+            btn.textContent = 'التبديل إلى العربية';
+            title.textContent = 'Document Archive Pro';
+            subtitle.textContent = 'Privacy Policy & Data Protection';
+        }
+    }
+</script>
+
+</body>
+</html>
